@@ -1,5 +1,4 @@
 
-
 let array=[
   {
     "id": 1,
@@ -59,14 +58,15 @@ let array=[
   },
  
 ]
-let result=[]
-for(let i=0;i<array.length;i++){
-      array[i].phone.forEach((elem)=>{
-        if(elem.startsWith('+91')){
-         
-          const {first_name,department,country}= array[i]
-          console.log(country,first_name,department)
-        }
-      })
+function filterOutDataUsingPhoneNumber(array){
+    for(let i=0;i<array.length;i++){
+        array[i].phone.forEach((ele)=>{
+            if(ele.startsWith("+91")){
+                const {last_name,gender,job_title}=array[i]
+                console.log(last_name,gender,job_title)
+            }
+        })
+    }
 }
 
+ filterOutDataUsingPhoneNumber(array)
