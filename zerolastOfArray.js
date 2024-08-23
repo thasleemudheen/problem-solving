@@ -7,6 +7,7 @@ function zero(array){
          [array[index],array[i]]=[array[i],array[index]]
        }
        index++;
+       
     }
   }
   return array
