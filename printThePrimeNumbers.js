@@ -5,13 +5,14 @@ function printPrime(value){
         console.log('its not a prime')
     }
      for(let i=2;i<value;i++){
-        if(value%i==0){
+        if(value%i===0){
             return false
         }
      }
      return true
 }
-
+const result=printPrime(value)
+console.log(result)
 function listPrime(value){
      for(let i=2;i<value;i++){
        if(printPrime(i)){
@@ -19,4 +20,4 @@ function listPrime(value){
        }
      }
 }
-listPrime(value)
+// listPrime(value)
