@@ -17,5 +17,4 @@ function flatArr(array){
     }
     return newArr
 }
-
 console.log(flatArr(inputArr))
